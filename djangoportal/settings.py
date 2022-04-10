@@ -17,8 +17,8 @@ import psycopg2
 import dj_database_url
 
 # Database URL setup
-DATABASE_URL = os.environ['DATABASE_URL']
-conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+# DATABASE_URL = os.environ['DATABASE_URL']
+# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 # Ready for production
 # If the host name starts with 'live', DJANGO_HOST = "production"
@@ -114,7 +114,7 @@ DATABASES = {
 }
 
 # Below Database
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # Static files
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))

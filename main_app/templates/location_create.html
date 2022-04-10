@@ -2,10 +2,8 @@
 {% block content %}
 <h1>Location Information</h1>
 
-<!-- <div class="locationForm"> -->
 
   <div class="locationForm">
-  <!-- {% load crispy_forms_tags %} -->
   <form method="post">
     {% csrf_token %} 
       {{form}} 
