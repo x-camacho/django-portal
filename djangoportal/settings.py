@@ -114,7 +114,7 @@ DATABASES = {
 }
 
 # Below Database
-# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # Static files
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
