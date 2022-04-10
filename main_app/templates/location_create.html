@@ -5,11 +5,11 @@
 <h1>Location Information</h1>
 
 
-<div class="container">
+<div class="loginForm container">
   <form method="post">
     {% csrf_token %} 
     {{ form|crispy }} 
-      <input type="submit" value="Submit" />
+      <input type="submit" class="btn btn-primary" value="Submit" />
   </form>
 </div>
 
