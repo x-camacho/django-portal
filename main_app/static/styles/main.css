@@ -46,6 +46,13 @@ p.errorMsg {
   justify-content: center;
 }
 
+.reportForm {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+
 .card {
   width: 30%;
   display: inline-block;
