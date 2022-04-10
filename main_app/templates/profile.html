@@ -3,10 +3,10 @@
 
 {% block content %}
 
-<h1>{{ username }}'s Home Page:</h1>
+<h1>{{ username }}'s Home Page</h1>
 
 <div class="profileText">
-    <h3>Locations {{ username }} Responsible For:</h3>
+    <h3>Locations {{ username }} is Responsible For:</h3>
         {% for location in locations %}
             <a href="/locations/{{ location.id }}">
                 <li>{{ location.name }}</li>
