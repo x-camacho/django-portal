@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>{{ username }}'s Home Page:</h1>
+
+<div>
+    <h3>Locations {{ username }} Responsible For:</h3>
+        {% for location in locations %}
+            <a href="/locations/{{ location.id }}">
+                <li>{{ location.name }}</li>
+            </a>
+            {% empty %}
+            <div>Currently no locations under management for {{ username }}.</div>
+        {% endfor %}
+</div>
+
+<!-- <div>
+    <h3>Reports {{ username }} Responsible For:</h3>
+        {% for report in location.reports.all %}
+            <a href="{% url 'reports_show' report.pk %}">{{report.name}}</a>
+                {% empty %}
+            <div>Currently no reports exist for this location.</div>
+        {% endfor %}
+    <div>
+</div> -->
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1> Details</h1>
+
+<div>
+    <div class="card">
+        <span>{{ report.name }}</span>
+        <p>Owned by:</p>
+        <h5>Description: {{ report.description }}</h5>
+        <h5>Report Frequency: {{ report.cadence }}</h5>
+        <h5>Date Created: {{ report.date }}</h5>
+        <h5>Notes: {{ report.notes }}</h5>
+        <h5>Reviewed? {{ report.reviewed }}</h5>
+        {% for report in report.location_set.all %}
+            <p>{{location.name}}</p>
+        {% empty %}
+            <p>No Report Found</p>
+        {% endfor %}
+    <div>
+        <a href="{% url 'reports_update' report.id %}">Edit</a>
+        <a href="{% url 'reports_delete' report.id %}">Delete</a>
+     </div>
+    </div>
+</div>
+{% endblock %}

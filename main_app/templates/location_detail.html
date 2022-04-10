@@ -1,0 +1,23 @@
+{% extends 'base.html' %} 
+
+{% block content %}
+
+    <h1>{{location.name}}</h1>
+</div>
+<div class="card">
+    <h3>City: {{location.city}}</h3>
+    <h3>State: {{location.state}}</h3>
+<div>
+    {% for report in location.reports.all %}
+    <a href="{% url 'reports_show' report.pk %}">{{report.name}}</a>
+    {% empty %}
+        <div>Currently no reports exist for this location.</div>
+    {% endfor %}
+    <div>
+        <a href="{% url 'location_update' location.pk %}">Update</a>
+        <a href="{% url 'location_delete' location.pk %}">Delete</a>
+    </div>
+</div>
+</div>
+
+{% endblock %}
