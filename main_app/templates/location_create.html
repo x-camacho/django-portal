@@ -4,11 +4,12 @@
 <h1>Location Information</h1>
 
 
-  <div class="locationForm">
+<div class="locationForm">
+{% load crispy_forms_tags %}
   <form method="post">
     {% csrf_token %} 
-      {{form.as_p}} 
-         <input type="submit" value="Submit" />
+      {{form|crispy}} 
+        <input type="submit" value="Submit" />
   </form>
 </div>
 

@@ -6,6 +6,14 @@
 
 .welcomeTxt {
   text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.profileText {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
 input {
