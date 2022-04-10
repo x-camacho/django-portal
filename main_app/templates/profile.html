@@ -16,13 +16,4 @@
         {% endfor %}
 </div>
 
-<!-- <div>
-    <h3>Reports {{ username }} Responsible For:</h3>
-        {% for report in location.reports.all %}
-            <a href="{% url 'reports_show' report.pk %}">{{report.name}}</a>
-                {% empty %}
-            <div>Currently no reports exist for this location.</div>
-        {% endfor %}
-    <div>
-</div> -->
 {% endblock %}
