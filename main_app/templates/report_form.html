@@ -1,16 +1,13 @@
 {% extends 'base.html' %}
-
+{% load crispy_forms_tags %}
 {% block content %}
 
 <h1>Report Information</h1>
 
 <div class="reportForm container">
-{% load crispy_forms_tags %}
     <form action="" method="post">
         {% csrf_token %}
-        <table>
-            {{ form|crispy }}
-        </table>
+        {{ form|crispy }}
         <input type="submit" value="Submit!">
     </form>
 </div>
