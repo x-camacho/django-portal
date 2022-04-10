@@ -55,7 +55,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-vbwnhoiis05=ac@npx7whjhfsg3z(e@yawrl&h1=sjcif$z%b*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
 # Application definition
 
@@ -115,7 +115,7 @@ DATABASES = {
 }
 
 # Below Database
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+# DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # Static files
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
