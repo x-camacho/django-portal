@@ -4,19 +4,25 @@
 
 
 <h1>{{header}}</h1>
-    {% for location in locations %}
-    <div class="card">
+{% for location in locations %}
+<div class="card" style="width: 18rem;">
     <a href="{% url 'location_detail' location.pk %}">
-        <h3>{{location.name}}</h3>
+        <h5 class="card-title">{{location.name}}</h5>
     </a>
-        <h5>Store Number: {{location.location_number}}</h5>
-        <h5>City: {{location.city}}</h5>
-        <h5>State: {{location.state}}</h5>
-        <h5>Managed By: 
-            <a href='/user/{{location.user.username}}'>{{location.user.username}}</a>
-        </h5>
-        {% empty %}
-        <p>No Report Found</p>
-    </div>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li>Store Number: {{location.location_number}}</li>
+            <li>City: {{location.city}}</li>
+            <li>State: {{location.state}}</li>
+            <li>Managed By:
+                <div class="card-body"> 
+                    <a href='/user/{{location.user.username}}' class="card-link">{{location.user.username}}</a>
+                </div>
+            </li>
+        </ul>
+            {% empty %}
+            <p>No Report Found</p>
+        </div>
+</div>
 {% endfor %}
 {% endblock %}
