@@ -4,6 +4,7 @@
 
 
 <h1>{{header}}</h1>
+
 {% for location in locations %}
 <div class="card" style="width: 18rem;">
     <a href="{% url 'location_detail' location.pk %}">
@@ -17,9 +18,7 @@
         <li>State: {{location.state}}</li>
     </ul>
         <p class="card-text">Managed By:
-            <div class="card-body"> 
                 <a href='/user/{{location.user.username}}' class="card-link">{{location.user.username}}</a>
-            </div>
         {% empty %}
         <p>No Report Found</p>
     </div>

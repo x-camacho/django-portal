@@ -61,6 +61,12 @@ p.errorMsg {
   position: relative;
 }
 
+.card {
+  display: flex;
+  flex-direction: row;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     padding: 0;
