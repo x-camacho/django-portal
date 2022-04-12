@@ -6,12 +6,12 @@ Your Portal! is the one stop shop application to manage all of your locations in
 
 ## Table of Contents
 
-[ERD](https://github.com/x-camacho/django_portal/#ERD) |
-[User Stories](https://github.com/x-camacho/django_portal/#User-Stories) |
-[Wire Frames](https://github.com/x-camacho/django_portal/#Wire-Frames) |
-[Technologies Used](https://github.com/x-camacho/django_portal/#Technologies-Used) |
-[Unresolved Issues](https://github.com/x-camacho/django_portal/#Unresolved-Issues) |
-[Future Enhancements/Modifications](https://github.com/x-camacho/django_portal/#Future-Enhancements/Modifications) |
+[ERD](https://github.com/x-camacho/django-portal/#ERD) |
+[User Stories](https://github.com/x-camacho/django-portal/#User-Stories) |
+[Wire Frames](https://github.com/x-camacho/django-portal/#Wire-Frames) |
+[Technologies Used](https://github.com/x-camacho/django-portal/#Technologies-Used) |
+[Unresolved Issues](https://github.com/x-camacho/django-portal/#Unresolved-Issues) |
+[Future Enhancements/Modifications](https://github.com/x-camacho/django-portal/#Future-Enhancements/Modifications) |
 
 ## ERD
 
