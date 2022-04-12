@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1> Details</h1>
+<h1>Report Details</h1>
 
 <div>
-    <div class="card">
-        <span>{{ report.name }}</span>
-        <p>Owned by:</p>
+    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 25rem;">
+    <div class="card-body">
+        <h2>{{ report.name }}</h2>
         <h5>Description: {{ report.description }}</h5>
         <h5>Report Frequency: {{ report.cadence }}</h5>
         <h5>Date Created: {{ report.date }}</h5>
@@ -18,9 +18,10 @@
             <p>No Report Found</p>
         {% endfor %}
     <div>
-        <a href="{% url 'reports_update' report.id %}">Edit</a>
-        <a href="{% url 'reports_delete' report.id %}">Delete</a>
+        <a href="{% url 'reports_update' report.pk %}">Edit</a>
+        <a href="{% url 'reports_delete' report.pk %}">Delete</a>
      </div>
     </div>
+</div>
 </div>
 {% endblock %}

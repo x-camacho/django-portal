@@ -88,14 +88,17 @@ class ReportCreate(CreateView):
     model = Report
     fields = '__all__'
     template_name = "report_form.html"
-    success_url = '/reports'
+    success_url = '/locations'
 
 @method_decorator(login_required, name='dispatch')
 class ReportUpdate(UpdateView):
     model = Report
-    fields = '__all__'
+    fields = ['name', 'description', 'cadence', 'date', 'notes', 'reviewed']
     template_name = "report_update.html"
-    success_url = '/reports'
+    success_url = '/reports/'
+
+    # def get_success_url(self):
+    #     return reverse('reports_show', kwargs={'pk': self.object.pk})
 
 @method_decorator(login_required, name='dispatch')
 class ReportDelete(DeleteView):
