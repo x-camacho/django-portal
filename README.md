@@ -9,6 +9,9 @@ Your Portal! is the one stop shop application to manage all of your locations in
 [ERD](https://github.com/x-camacho/django_portal/#ERD) |
 [User Stories](https://github.com/x-camacho/django_portal/#User-Stories) |
 [Wire Frames](https://github.com/x-camacho/django_portal/#Wire-Frames) |
+[Technologies Used](https://github.com/x-camacho/django_portal/#Technologies-Used) |
+[Unresolved Issues](https://github.com/x-camacho/django_portal/#Unresolved-Issues) |
+[Future Enhancements/Modifications](https://github.com/x-camacho/django_portal/#Future-Enhancements/Modifications) |
 
 ## ERD
 
@@ -28,6 +31,12 @@ Your Portal! is the one stop shop application to manage all of your locations in
 
 <img width="923" alt="Screen Shot 2022-03-31 at 11 48 23 AM" src="https://user-images.githubusercontent.com/94874302/161127914-0a05e50b-59fe-49a3-a0cf-d6c24e09144f.png">
 
+## Technologies Used
 
 
+## Unresolved Issues
+
+
+
+## Future Enhancements/Modifications
 
