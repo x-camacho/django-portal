@@ -1,10 +1,14 @@
 {% extends 'base.html' %} 
-
+{% load crispy_forms_tags %}
 {% block content %}
-<h1>Are you sure you want to Delete {{location.name}}?</h1>
-<form method="post">
-  {% csrf_token %}
-    <input type="submit" value="Confirm" />
-    <a href="{% url 'location_detail' location.pk %}">Cancel</a>
-</form>
+
+<div class="deleteReport">
+  <h1>Are you sure you want to Delete {{location.name}}?</h1>
+    <form method="post">
+          {% csrf_token %}
+          {{form|crispy}}
+          <input type="submit" value="Confirm" />
+        <a href="{% url 'location_detail' location.pk %}">Cancel</a>
+  </form>
+</div>
 {% endblock %}
